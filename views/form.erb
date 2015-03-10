@@ -1,0 +1,14 @@
+<h1>Welcome to the Vowel Movement</h1>
+
+<form action='/' method='post'>
+  <div class="form-group">
+    <label for="input">Submit Word</label>
+    <input id="input" name="input" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn btn-info">SCAN</button>
+  <a href="/" class="btn btn-info" role="button">CHECK NEW WORD</a>
+</form>
+
+<% if @result %>
+<h2>Missing Vowels = <%= @result %></h2>
+<% end %>
